@@ -7,7 +7,8 @@ class Stages extends React.Component{
     return(
       <div id="stages">
         <div class="new-stage">
-          <Button variant="outline-dark"><i class="fa fa-plus-circle" aria-hidden="true"></i> New Stage</Button>
+          <input placeholder="Search stage" className="form-control" style={{width:'11rem'}}/>
+          <Button variant="outline-dark"><i className="fa fa-plus-circle" aria-hidden="true"></i> New Stage</Button>
         </div>
         #TODO: add stages with corresponding comments
       </div>

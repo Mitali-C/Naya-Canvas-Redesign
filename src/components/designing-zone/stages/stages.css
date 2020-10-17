@@ -1,7 +1,7 @@
 #stages .new-stage{
   width:100%;
   display:flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
