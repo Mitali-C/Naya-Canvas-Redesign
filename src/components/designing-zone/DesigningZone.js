@@ -33,8 +33,8 @@ class DesigningZone extends React.Component{
   render(){
     return(
       <Container id="designing-zone">
-        <h5><span style={{fontWeight:'bold'}}>Client Name: </span>Mitali Chaudhari</h5>
-        <h5><span style={{fontWeight:'bold'}}>Designer Name: </span>Mitali Chaudhari</h5> #todo: add an info icon which will redirect to the designer details page
+        <h5><span style={{fontWeight:'bold'}}>Client Name: </span>Client</h5>
+        <h5><span style={{fontWeight:'bold'}}>Designer Name: </span>Designer</h5> #todo: add an info icon which will redirect to the designer details page
         <hr></hr>
         <Tabs defaultActiveKey="stages" id="uncontrolled-tab-example">
           <Tab eventKey="stages" title="Stages">
