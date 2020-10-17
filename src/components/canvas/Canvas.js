@@ -4,7 +4,6 @@ import './canvas.css';
 
 class Canvas extends React.Component{
   state={
-    showQuestions:true,
     current:0,
   }
 

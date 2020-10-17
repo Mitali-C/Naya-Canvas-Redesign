@@ -5,3 +5,13 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
+#stages .card{
+  border:none;
+  margin-bottom: 1rem;
+}
+
+#stages .card .active-stage{
+  background-color: #000;
+  color: #fff;
+}
