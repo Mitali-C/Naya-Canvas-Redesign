@@ -37,9 +37,7 @@ class Stages extends React.Component{
                   <h4> <i className={this.state.current===index.toString() ? "fa fa-minus-circle" : "fa fa-plus-circle"} aria-hidden="true"></i> {stage.stageName}</h4>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={index.toString()}>
-                  <Card.Body>
                     <Comments data={stage.comments}/>
-                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
             ))

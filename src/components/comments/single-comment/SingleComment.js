@@ -1,11 +1,12 @@
 import React from 'react';
+import {} from 'react-bootstrap';
 import './single-comment.css';
 
 class SingleComment extends React.Component{
   render(){
     return(
       <div>
-        TODO: Add single comment component
+        TODO: single comment component
       </div>
     )
   }
