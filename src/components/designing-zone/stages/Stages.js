@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Accordion, Card} from 'react-bootstrap';
 import stagesData from './stagesData'; 
+import Comments from '../../comments/Comments';
 import './stages.css';
 
 class Stages extends React.Component{
@@ -36,7 +37,9 @@ class Stages extends React.Component{
                   <h4> <i className={this.state.current===index.toString() ? "fa fa-minus-circle" : "fa fa-plus-circle"} aria-hidden="true"></i> {stage.stageName}</h4>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={index.toString()}>
-                  <Card.Body>TODO: add comments</Card.Body>
+                  <Card.Body>
+                    <Comments data={stage.comments}/>
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
             ))

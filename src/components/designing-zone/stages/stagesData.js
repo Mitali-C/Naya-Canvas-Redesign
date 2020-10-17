@@ -1,5 +1,10 @@
 const stages=[
   {
+    stageName:'Modeling',
+    comments: [
+    ]
+  },
+  {
     stageName:'Sketch Phase',
     comments: [
       {
