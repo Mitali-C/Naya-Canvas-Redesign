@@ -25,3 +25,17 @@
   color: #fff;
   background-color: #000;
 }
+
+.btn-stage-dark{
+  color: #000;
+  border-color: #000;
+  height: 3rem;
+  border-radius: 1.5rem;
+  margin: 0.2rem;
+}
+
+.btn-stage-dark:hover{
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+}

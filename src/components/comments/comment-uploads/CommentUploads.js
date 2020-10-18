@@ -108,7 +108,7 @@ class CommentUploads extends React.Component{
             </div>
           </div>
         </div>
-        <Modal show={this.state.expand} onHide={this.handleClose} size="lg">
+        <Modal show={this.state.expand} onHide={this.handleClose} size="lg" centered>
           <Modal.Header closeButton style={{border:'none'}}>
           </Modal.Header>
           <Modal.Body style={{display:'flex', justifyContent:'center'}}>

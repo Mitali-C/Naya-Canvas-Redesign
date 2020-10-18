@@ -55,6 +55,7 @@ class DesigningZone extends React.Component{
             <i class="fa fa-info info-icon" aria-hidden="true"></i>
           </Button>
         </OverlayTrigger>
+      
       </Container>
     )
   }

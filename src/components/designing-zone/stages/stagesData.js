@@ -1,10 +1,5 @@
 const stages=[
   {
-    stageName:'Modeling',
-    comments: [
-    ]
-  },
-  {
     stageName:'Sketch Phase',
     comments: [
       {
@@ -17,7 +12,7 @@ const stages=[
           },
           {
             link:'https://i.pinimg.com/236x/67/11/92/6711927bbdbe1f8d5841268066ddf98d--vienna-austria-graphic-designers.jpg',
-            status:''
+            status:'rejected'
           },
           {
             link:'https://s3images.coroflot.com/user_files/individual_files/large_479412_jvynxro03bx_5xrm2nqzd7eam.jpg',
