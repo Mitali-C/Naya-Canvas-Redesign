@@ -15,3 +15,13 @@
   background-color: #000;
   color: #fff;
 }
+
+#stages .btn-outline-dark{
+  color: #000;
+  border-color: #000;
+}
+
+#stages .btn-outline-dark:hover, #stages .btn-outline-dark:active{
+  color: #fff;
+  background-color: #000;
+}

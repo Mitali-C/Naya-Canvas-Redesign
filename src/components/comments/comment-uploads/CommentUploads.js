@@ -1,9 +1,12 @@
 import React from 'react';
-import {Image, OverlayTrigger, Tooltip} from 'react-bootstrap'
+import {Image, OverlayTrigger, Tooltip, Modal} from 'react-bootstrap'
 import './comment-uploads.css';
 
 class CommentUploads extends React.Component{
-  
+  state={
+    expand:false
+  }
+
   getStatus = () => {
     switch(this.props.image.status){
       case 'accepted':
@@ -21,6 +24,10 @@ class CommentUploads extends React.Component{
       default:
         break;
     }
+  }
+
+  handleClose = () => {
+    this.setState({expand:false})
   }
 
   render(){
@@ -73,12 +80,9 @@ class CommentUploads extends React.Component{
                 <i style={{color:'#fff'}} className="icon fa fa-question fa-stack-1x fa-inverse" aria-hidden="true"></i>
               </span>
             </OverlayTrigger>
-            
-            
-            
           </div>
           <div className="icon image-controls">
-            <div>
+            <div onClick={()=>{this.setState({expand:true})}}>
               <span className="icon fa-stack">
                 <i className="icon fa fa-circle  fa-stack-2x" aria-hidden="true"></i>
                 <i style={{color:'#fff'}} className="icon fa fa-expand fa-stack-1x fa-inverse" aria-hidden="true"></i>
@@ -93,7 +97,7 @@ class CommentUploads extends React.Component{
             <div>
               <span className="icon fa-stack">
                 <i className="icon fa fa-circle  fa-stack-2x" aria-hidden="true"></i>
-                <i style={{color:'#fff'}} className="icon fa fa-repeat fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                <i style={{color:'#fff'}} className="icon fa fa-undo fa-stack-1x fa-inverse" aria-hidden="true"></i>
               </span>
             </div>
             <div>
@@ -104,6 +108,13 @@ class CommentUploads extends React.Component{
             </div>
           </div>
         </div>
+        <Modal show={this.state.expand} onHide={this.handleClose} size="lg">
+          <Modal.Header closeButton style={{border:'none'}}>
+          </Modal.Header>
+          <Modal.Body style={{display:'flex', justifyContent:'center'}}>
+            <Image src={this.props.image.link} fluid alt="expanded image"/>
+          </Modal.Body>
+        </Modal>
       </div>
     )
   }

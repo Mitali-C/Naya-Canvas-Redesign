@@ -12,3 +12,50 @@
 #designing-zone .nav-tabs .nav-link{
   color:#000;
 }
+
+#designing-zone .call-button{
+  position: fixed;
+  right: 0px;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2), 0 0px 7px 0 rgba(0,0,0,0.19);
+  border: none;
+  bottom: 0px;
+  background-color: #32cd32;
+}
+
+#designing-zone .call-button:hover{
+  background-color: #FFF;
+  border: 1px solid #32cd32;
+}
+
+#designing-zone .call-button:hover .call-icon{
+  color: #32cd32;
+}
+
+/* info button */
+
+#designing-zone .info-button{
+  position: fixed;
+  right: 0px;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2), 0 0px 7px 0 rgba(0,0,0,0.19);
+  border: none;
+  bottom: 4rem;
+  background-color: #1ac5ff;
+}
+
+#designing-zone .info-button:hover{
+  background-color: #FFF;
+  border: 1px solid #1ac5ff;
+}
+
+#designing-zone .info-button:hover .info-icon{
+  color: #1ac5ff;
+}
+
