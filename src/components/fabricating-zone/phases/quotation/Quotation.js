@@ -52,6 +52,9 @@ class Quotation extends React.Component{
             ))
           }
         </CardDeck>
+        <div style={{margin:'2rem 0', display:'flex', justifyContent:'center'}}>
+          <Button variant="outline-dark">Generate comparison chart</Button>
+        </div>
       </div>
     )
   }
