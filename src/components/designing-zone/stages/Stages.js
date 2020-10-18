@@ -19,13 +19,10 @@ class Stages extends React.Component{
     }
   }
 
-  componentDidMount(){
-    console.log("stages dummy data: ", stagesData)
-  }
   render(){
     return(
       <div id="stages">
-        <div class="new-stage">
+        <div className="new-stage">
           <input placeholder="Search stage" className="form-control" style={{width:'11rem'}}/>
           <Button variant="outline-dark"><i className="fa fa-plus-circle" aria-hidden="true"></i> New Stage</Button>
         </div>

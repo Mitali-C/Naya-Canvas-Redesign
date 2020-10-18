@@ -1,0 +1,55 @@
+#comment-container{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#comment-container .comment-card{
+  min-width: 250px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  width: fit-content;
+  padding: 0.6rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#comment-container .comment-buttons-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#comment-container .comment-buttons-container .button{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#comment-container .comment-buttons-container .btn-outline-dark{
+  color: #000;
+    border-color: #000;
+}
+
+#comment-container .comment-buttons-container .btn-outline-dark:hover{
+  color: #fff;
+  background-color: #000;
+}
+
+#comment-container .comment-buttons-container .btn-dark{
+  background-color: #000;
+}
+
+@media (min-width: 300px) {
+  #comment-container .comment-card{
+    width: 100%;
+  }
+}
+
+@media (min-width: 450px) {
+  #comment-container .comment-card{
+    min-width: 250px;
+    max-width: 100%;
+  }
+}

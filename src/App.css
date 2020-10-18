@@ -4,14 +4,26 @@
   .content-container {
       flex-direction: column;
   }
+  .main-content {
+    flex: 1;
+    position: absolute;
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .content-container {
+      flex-direction: column;
+  }
+  .main-content {
+    flex: 1;
+    position: relative;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 600px) {
   .content-container {
       flex-direction: row;
   }
-}
-
-.main-content {
-  flex: 1;
 }

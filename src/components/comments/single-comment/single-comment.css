@@ -1,0 +1,30 @@
+#comment-container{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#comment-container .single-comment-card{
+  min-width: 250px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  width: fit-content;
+  padding: 0.6rem;
+  min-height: 15rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 300px) {
+  #comment-container .single-comment-card{
+    width: 100%;
+  }
+}
+
+@media (min-width: 450px) {
+  #comment-container .single-comment-card{
+    min-width: 250px;
+    max-width: 100%;
+  }
+}
