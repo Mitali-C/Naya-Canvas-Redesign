@@ -1,19 +1,19 @@
-#designing-zone{
+#fabricating-zone{
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-#designing-zone .nav-tabs .nav-link.active{
+#fabricating-zone .nav-tabs .nav-link.active{
   color: #fff!important;
   background-color: #000;
   border: none;
 }
 
-#designing-zone .nav-tabs .nav-link{
+#fabricating-zone .nav-tabs .nav-link{
   color:#000;
 }
 
-#designing-zone .call-button{
+#fabricating-zone .call-button{
   position: fixed;
   right: 0px;
   width: 3rem;
@@ -26,18 +26,18 @@
   background-color: #32cd32;
 }
 
-#designing-zone .call-button:hover{
+#fabricating-zone .call-button:hover{
   background-color: #FFF;
   border: 1px solid #32cd32;
 }
 
-#designing-zone .call-button:hover .call-icon{
+#fabricating-zone .call-button:hover .call-icon{
   color: #32cd32;
 }
 
 /* info button */
 
-#designing-zone .info-button{
+#fabricating-zone .info-button{
   position: fixed;
   right: 0px;
   width: 3rem;
@@ -50,16 +50,16 @@
   background-color: #1ac5ff;
 }
 
-#designing-zone .info-button:hover{
+#fabricating-zone .info-button:hover{
   background-color: #FFF;
   border: 1px solid #1ac5ff;
 }
 
-#designing-zone .info-button:hover .info-icon{
+#fabricating-zone .info-button:hover .info-icon{
   color: #1ac5ff;
 }
 
-#designing-zone .designer-info{
+#fabricating-zone .fabricating-info{
   background-color: #000;
   border-color: #000;
   padding: 0;
@@ -69,15 +69,15 @@
   margin-left: 0.5rem;
 }
 
-#designing-zone .designer-info-icon{
+#fabricating-zone .fabricating-info-icon{
   color:#fff;
 }
 
-#designing-zone .designer-info:hover{
+#fabricating-zone .fabricating-info:hover{
   background-color: #fff;
   border-color: #000;
 }
 
-#designing-zone .designer-info:hover .designer-info-icon{
+#fabricating-zone .fabricating-info:hover .fabricating-info-icon{
   color:#000;
 }

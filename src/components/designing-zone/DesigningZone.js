@@ -19,7 +19,21 @@ class DesigningZone extends React.Component{
       <Container id="designing-zone">
         <ScheduleCall show={this.state.callModal} toggle={this.toggleCall}/>
         <h5><span style={{fontWeight:'bold'}}>Client Name: </span>Client</h5>
-        <h5><span style={{fontWeight:'bold'}}>Designer Name: </span>Designer</h5> #todo: add an info icon which will redirect to the designer details page
+        <div style={{display:'flex', flexWrap:'wrap', alignItems:'center'}}>
+          <h5><span style={{fontWeight:'bold'}}>Designer Name: </span>Designer</h5>
+          <OverlayTrigger
+            placement={'auto'}
+            overlay={
+              <Tooltip >
+                Know your designer!
+              </Tooltip>
+            }
+          >
+            <Button className="designer-info">
+              <i class="fa fa-info designer-info-icon" aria-hidden="true"></i>
+            </Button>
+          </OverlayTrigger>
+        </div>
         <hr></hr>
         <Tabs defaultActiveKey="stages" id="uncontrolled-tab-example">
           <Tab eventKey="stages" title="Stages">

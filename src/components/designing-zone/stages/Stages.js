@@ -35,7 +35,7 @@ class Stages extends React.Component{
           {
             this.state.stages.map((stage, index) => (
               <Card key={index}>
-                <Accordion.Toggle as={Card.Header} className={this.state.current===index.toString() ? 'active-stage' : 'inactive-stage'} eventKey={index.toString()} onClick={()=>this.toggleCurrentValue(index.toString())}>
+                <Accordion.Toggle style={{cursor:'pointer'}} as={Card.Header} className={this.state.current===index.toString() ? 'active-stage' : 'inactive-stage'} eventKey={index.toString()} onClick={()=>this.toggleCurrentValue(index.toString())}>
                   <h5> <i className={this.state.current===index.toString() ? "fa fa-minus-circle" : "fa fa-plus-circle"} aria-hidden="true"></i> {stage.stageName}</h5>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={index.toString()}>
