@@ -15,7 +15,7 @@ class App extends React.Component {
                 fluid
             >
                 <Row className='h-100 content-container'>
-                    <div>
+                    <div style={{zIndex:2}}>
                         <NavBar></NavBar>
                     </div>
                     <div className='main-content'>
