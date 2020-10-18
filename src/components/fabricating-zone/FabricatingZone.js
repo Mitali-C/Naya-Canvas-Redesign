@@ -23,7 +23,7 @@ class FabricatingZone extends React.Component{
             placement={'auto'}
             overlay={
               <Tooltip >
-                Know your designer!
+                Know your fabricator!
               </Tooltip>
             }
           >
