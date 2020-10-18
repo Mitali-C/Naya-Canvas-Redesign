@@ -9,6 +9,7 @@
     position: absolute;
     margin-top: 4rem;
     z-index:1;
+    width: 100%;
   }
 }
 
