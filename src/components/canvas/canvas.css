@@ -6,3 +6,16 @@
 #canvas-container .card{
   border:none;
 }
+
+#canvas-container .canvas-tiles-container{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#canvas-container .canvas-tiles-container .canvas-tile{
+  width: 250px;
+  height: 300px;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2), 0 0px 7px 0 rgba(0,0,0,0.19);
+}

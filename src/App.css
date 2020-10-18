@@ -29,3 +29,13 @@
       flex-direction: row;
   }
 }
+
+.btn-outline-dark{
+  color: #000;
+  border-color: #000;
+}
+
+.btn-outline-dark:hover,.btn-outline-dark:active{
+  color: #fff;
+  background-color: #000;
+}
