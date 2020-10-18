@@ -13,7 +13,7 @@ class Comments extends React.Component{
       <div id="comments">
         <NewComment/>
         {
-          this.state.comments.map((comment, index)=>(
+          this.state.comments!==undefined && this.state.comments.map((comment, index)=>(
             <SingleComment comment={comment} key={index}/>
           ))
         }

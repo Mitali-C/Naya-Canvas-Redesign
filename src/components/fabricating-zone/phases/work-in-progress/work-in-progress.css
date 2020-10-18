@@ -1,0 +1,32 @@
+#wip{
+  width: 100%;
+}
+
+#wip h4{
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#wip .images-container{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+#wip .image-card{
+  width:250px;
+  height: 300px;
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2), 0 0px 7px 0 rgba(0,0,0,0.19);
+}
+
+#wip .image-card .img-fluid{
+  width:250px;
+  height: 100%;
+  border-radius: 1rem;
+}

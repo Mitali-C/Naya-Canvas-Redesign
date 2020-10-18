@@ -1,0 +1,37 @@
+.MuiStepper-alternativeLabel{
+  padding: 0!important;
+}
+
+#phases{
+  display: flex;
+}
+
+#phases .stepper-container{
+  
+}
+
+@media (min-width: 300px){
+  #phases{
+    flex-direction: column;
+  }
+  #phases .stepper-container{
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px){
+  #phases{
+    flex-direction: row;
+  }
+  #phases .stepper-container{
+    width: 200px;
+  }
+}
+
+#phases .content{
+  flex:1;
+}
+
+.MuiStepIcon-root.MuiStepIcon-completed{
+  color: #000!important;
+}

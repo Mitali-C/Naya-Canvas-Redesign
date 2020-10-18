@@ -11,11 +11,11 @@ class CommentUploads extends React.Component{
     switch(this.props.image.status){
       case 'accepted':
         return(
-          <h6 style={{backgroundColor:'#32cd32', color:'#FFF', padding:'0.5rem'}}>Accepted!</h6>
+          <h6 style={{backgroundColor:'#32cd32', color:'#FFF', padding:'0.5rem'}}>Liked it!</h6>
         )
       case 'rejected':
         return(
-          <h6 style={{backgroundColor:'red', color:'#FFF', padding:'0.5rem'}}>Rejected!</h6>
+          <h6 style={{backgroundColor:'red', color:'#FFF', padding:'0.5rem'}}>Not my style!</h6>
         )
       case 'changes_required':
         return(
@@ -45,7 +45,7 @@ class CommentUploads extends React.Component{
               placement={'auto'}
               overlay={
                 <Tooltip >
-                  <strong>Accept the idea</strong>
+                  <strong>Liked it!</strong>
                 </Tooltip>
               }
             >
@@ -58,7 +58,7 @@ class CommentUploads extends React.Component{
               placement={'auto'}
               overlay={
                 <Tooltip >
-                  <strong>Reject the idea</strong>
+                  <strong>Not my style!</strong>
                 </Tooltip>
               }
             >

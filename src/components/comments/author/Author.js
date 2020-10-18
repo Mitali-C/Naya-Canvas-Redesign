@@ -8,7 +8,7 @@ class Author extends React.Component{
         <div className="user-icon"><i className="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
         <div>
           <h6>Mitali</h6>
-          <p>1 min ago</p>
+          <p>Just now</p>
         </div>
       </div>
     )

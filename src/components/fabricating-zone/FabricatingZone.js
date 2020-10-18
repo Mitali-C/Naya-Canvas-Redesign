@@ -2,6 +2,8 @@ import React from 'react';
 import {Container, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import './fabricating-zone.css';
 import ScheduleCall from '../designing-zone/schedule-call/ScheduleCall';
+import Phases from './phases/Phases';
+import Comments from '../comments/Comments';
 
 class FabricatingZone extends React.Component{
   state={
@@ -33,12 +35,18 @@ class FabricatingZone extends React.Component{
           </OverlayTrigger>
         </div>
         <hr></hr>
+
+        <Phases></Phases>
+
+        <hr></hr>
+
+        <Comments comments={[]}></Comments>
         
         <OverlayTrigger
           placement={'auto'}
           overlay={
             <Tooltip >
-              Schedule a call with your designer!
+              Schedule a call with your fabricator!
             </Tooltip>
           }
         >
