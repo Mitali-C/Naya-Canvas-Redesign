@@ -1,6 +1,7 @@
 import React from 'react';
-import {CardDeck, Card, Button} from 'react-bootstrap';
+import {CardDeck, Card, Button, Image, Modal} from 'react-bootstrap';
 import './quotation.css';
+import Comparison from '../../../../assets/images/comparison_chart.PNG';
 
 class Quotation extends React.Component{
   state = {
@@ -20,8 +21,14 @@ class Quotation extends React.Component{
         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdZyNcaGzkqS87VZp1sXbep7sLvs9pod9oRA&usqp=CAU"
       },
     ],
-    selected:0
+    selected:0,
+    showComparisonChart:false
   }
+
+  toggleComparisonChart = () => {
+    this.setState({showComparisonChart:!this.state.showComparisonChart});
+  }
+
   render(){
     return(
       <div id="quotation">
@@ -53,8 +60,17 @@ class Quotation extends React.Component{
           }
         </CardDeck>
         <div style={{margin:'2rem 0', display:'flex', justifyContent:'center'}}>
-          <Button variant="outline-dark">Generate comparison chart</Button>
+          <Button onClick={this.toggleComparisonChart} variant="outline-dark">Generate comparison chart</Button>
         </div>
+
+        <Modal show={this.state.showComparisonChart} size="lg" onHide={this.toggleComparisonChart} centered>
+          <Modal.Header style={{borderBottom:0}} closeButton>
+            <Modal.Title style={{width:'100%', textAlign:'center'}}>Comparison Chart</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Image src={Comparison} alt="comparison chart" fluid/>
+          </Modal.Body>
+        </Modal>
       </div>
     )
   }
